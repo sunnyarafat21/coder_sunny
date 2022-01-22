@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montez&family=Montserrat:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,500&family=Montez&family=Montserrat:wght@200;400&display=swap');
+:root{
+    --shadaw-black : #212F3D;
+    --violet : #7D3C98;
+    --yellow :#F4D03F;
+    --lightgreen:#82E0AA;
+
+
+       /* all----font */
+
+       --monsaret: "Montserrat";
+       --Josefilns :"Josefin Sans";
+
+} 
+html{
+    font-size: 62.5%;
+}
+ul{
+    list-style: none;
+    
+}
+
+a{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Montserrat";
+    text-decoration: none;
+    color: var(--shadaw-black);
+    text-decoration: none;
+
+}
+
+
+*::after+::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ #topsection{
+     display: flex;
+     flex-direction: column;
+     background-color: #100e11;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./photos/bgblack.jpg);
+    background-blend-mode: overlay;
+ }
+.first-header{
+    width: 100%;
+    height: 15%;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     justify-content: center;
+
+}
+
+.navvar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.navvar  ul{
+    display: flex ;
+    flex-direction: rows;
+    margin-left: 300px;
+
+}
+
+.navvar  ul li{
+    width: 100px;
+    height: 30px;
+    background-color: whitesmoke;
+    display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 5px;
+     transition: 0.6s ease-in-out;
+     margin-left: 10px;
+     cursor: pointer;
+
+     border-radius: 7px;
+}
+.navvar  ul li:hover{
+    background-color: var(--shadaw-black);
+
+}
+.navvar  ul li a:hover{
+    color: whitesmoke;
+}
+div button{
+    height: 40px;
+    width: 150px ;
+    font-size: 20px;
+    font-weight: 800;
+    font-family:  "Montez";
+    color:#F4F6F7;
+    background-color:#5D6D7E;
+    outline: none;
+    border: none;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    box-shadow: 2px 0px 14px #212F3D;
+    transition: 0.8s ease-in-out;
+    cursor: pointer;
+    
+
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+   
+}
+
+.btn button:hover {
+    background: #212F3D;
+    color: var(--yellow);
+  
+}
+
+.myimage-tile{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+   
+
+}
+.myimage-tile .imgbox{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    flex-basis: 50%; 
+    margin-top: 10px;
+
+
+
+}
+.myimage-tile .imgbox  img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+   transform: .2;
+    
+}
+
+.myimage-tile .mytitle{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     text-align: center;
+    flex-basis: 50%;
+
+}
+
+
+/* .myimage-tile .mytitle h1{
+    font-size: 50px;
+    font-family: var(--monsaret);
+    margin-bottom: -4px;
+    color: #229954;
+    letter-spacing: 0.5px;
+  
+} */
+.myimage-tile .mytitle h3 span{
+    color: whitesmoke;
+    
+}
+
+.myimage-tile .mytitle h3 span::after{
+    font-size: 25px;
+    color: var(--shadaw-black);
+    offset-rotate: 35deg 180deg;
+}
+
+.myimage-tile .mytitle h3 {
+    font-size: 26px;
+    font-family: var(--monsaret);
+    letter-spacing: 0.5px;
+}
+.cubic{
+    height: 60%;
+    width: 100%;
+}
+.cubic img{
+    width: 100%;
+    height: 100%;
+}
+
+.borderline{
+    width: 100%;
+    height: 10px;
+    border: none;
+    background-color: var(--lightgreen) ;
+    overflow: hidden;
+    
+}
+
+.eyeicon{
+    height: 100%;
+    width: 5%;
+    background-image: linear-gradient(to right,
+      rgba(245, 41, 41, 0.938) 25%,
+      rgba(228, 15, 15, 0.712) 50%,
+      rgba(187, 2, 2, 0.938) 75%);
+    background-color: whitesmoke;
+    -webkit-animation: 4s linear 0s infinite alternate move_eye;
+    animation: 4s linear 0s infinite alternate move_eye;
+}
+
+@-webkit-keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
+        @keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
+
+
+.myimage-tile svg{
+    height: 100px;
+    width: 200px;
+ }
+
+
+ /* ---------------------------------- technology cssss-----------*/
+
+
+ #skilssection{
+     width: 100%;
+     height: auto;
+     background-color: #100e11;
+     display: flex;
+     flex-direction: column;
+     justify-content: start;
+    
+
+   
+ }
+
+ .skilsheader{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ /* .skilsheader */
+  * h1 {
+     font-family:var(--Josefilns) ;
+     font-size: 30px;
+     font-weight: 700;
+     color: #016AE0;
+     text-align: center;
+    margin: 0px;
+
+
+ }
+
+ * h2 {
+    font-size: 18px;
+    padding: 10px;
+    margin: 0px;
+    color: #494949;
+    font-family: var(--monsaret);
+    font-weight: 900;
+    text-align: start;
+}
+ * p {
+    padding-left: 10px;
+    margin: 0;
+    text-align: start;
+    font-size: 13px;
+    font-family: var(--monsaret);
+    color: #adaac0;
+    
+}
+
+.techdetails{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+
+}
+ 
+
+ .leftbox{
+     display: flex;
+     flex-direction: column;
+     flex-basis: 50%;
+     padding-left: 20px;
+     margin: 5px 0px 10px 0px;
+     
+ }
+
+ .tech{
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     margin-top: 5px;
+     margin-bottom: 1.5rem;
+     box-shadow: 2px 0 1rem 0 rgba(0, 0, 0, 0.432); 
+     border-radius: 5px;
+     position: relative;
+     z-index: 6;
+     background: inherit;
+     overflow: hidden;
+     justify-content: space-around;
+     height: 150px;
+     
+ }
+
+ 
+
+ .logo i {
+    font-size: 43px;
+    color: #494949;
+}
+
+.logo {
+    width: 7rem;
+    height: 6rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logotitles {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 10px;
+    align-items: flex-start;
+}
+ .rightbox{
+
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     flex-basis: 50%;
+
+ }
+
+.singleprogress{
+    width: 86%;
+    height: 7.5rem;
+}
+
+.singleprogress i{
+    font-size: 30px;
+}
+
+.pregesicon{
+    width: 1.5rem;
+
+}
+
+.htmllogo i{
+   
+    color: #E87D23;
+}
+
+.csslogo i{
+   
+    color: #3499DB;
+}
+
+.javascriptlogo i{
+  
+    color: #D89924;
+}
+.pythonlogo i{
+   
+    color: #366898;
+}
+.photoshoplogo i{
+    padding-left: 3px;
+    color: #b7b93c;
+}
+.phplogo i{
+   
+    color: #348fe4;
+   
+}
+
+.singleprogress progress{
+    width: 93%;
+    height: 30px;
+    border: none;
+    padding: 3px 0px 3px 0px;
+    
+}
+
+
+/*----------------------responsive  ---------*/
+
+
+@media only screen  and (min-width:350px) and (max-width: 768px) {
+    /* For mobile phones: */
+
+    #skilssection{
+      
+    
+    padding: 5px;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    }
+    
+    .skilsheader {
+        margin-bottom: 5px;
+
+    }
+    .techdetails{
+    flex-direction: column;
+    padding: 20px;
+    }
+    .tech {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+        box-shadow: 6px 0 1rem 0 #00000098;
+        border-radius: 5px;
+        position: relative;
+        z-index: 1;
+        height: auto;
+        background: inherit;
+        overflow: hidden;
+    }
+    .tech::before{
+        content: "";
+        position: absolute;
+        background:inherit ;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        box-shadow: inset 5px 5px 2000px rgba(255, 255, 255, 0.068);
+        filter: blur(20px);
+        
+    }
+   
+    .logo i{
+        font-size: 6rem;
+        margin-top: 2.5rem;
+
+    }
+
+    .logotitles{
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    }
+    * h2{
+        text-align: center;
+        font-size: 24px;
+    }
+     
+    * p {
+        padding: 10px;
+        text-align: justify;
+        font-weight: 700;
+        color: #554c8f;
+    }
+    .rightbox{
+    align-items: center;
+    justify-content: center;
+    }
+    .singleprogress{
+        
+           
+            height: auto;
+            width: 768px;
+            padding: 0 1rem;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center
+    
+    }
+    .singleprogress progress {
+        width: 40rem;
+        height: 3rem;
+        border: none;
+        padding: 3px 0px 3px 0px;
+        justify-self: center;
+    }
+    
+   div.all{
+    padding-top: 40px;
+    width: 212px;
+    display: flex;
+    height: 99px;
+    display: flex;
+    text-align: center;
+    
+    justify-content: center;
+    }
+    div.all i{
+        font-size: 55px;
+    }
+  }
+
